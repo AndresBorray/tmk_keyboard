@@ -1,35 +1,28 @@
 #include "keymap_common.h"
 
-/*const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    KEYMAP( ESC,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    BSPC, \
-            TAB,  A,    S,    D,    F,    G,    H,    J,    K,    L,    ENT, \
-            LSFT, Z,    X,    C,    V,    B,    N,    M,    COMM, RSFT, CAPS, \
-            LCTL, DEL,  LALT, LALT, LALT, SPC,  RALT, RALT, DOT,  SLSH ),
-};*/
-
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = KEYMAP(
-  FN29, FN30, FN31, 4,    5,    6,    7,    8,    9,    0,    MINS, EQL, GRV,
-  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, 
-  A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, BSLS,
-  Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH ),
+  ESC,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    BSPC, DEL,
+  TAB,  A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, ENT,
+  LSFT, Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, RSFT,
+  LCTL, FN1,  LGUI, LALT, SPC,  SPC,  RALT, RGUI, FN2,  RCTL ),
 [1] = KEYMAP(
-  FN29, FN30, FN31, 4,    5,    6,    7,    8,    9,    0,    MINS, EQL, GRV,
-  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, 
-  A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, BSLS,
-  Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH ),
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS ),
 [2] = KEYMAP(
-  FN29, FN30, FN31, 4,    5,    6,    7,    8,    9,    0,    MINS, EQL, GRV,
-  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, 
-  A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, BSLS,
-  Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH ),
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS ),
 };
 
 
 
 const uint16_t PROGMEM fn_actions[] = {
-    [1] = ACTION_LAYER_MOMENTARY(1),  // LOWER
-    [2] = ACTION_LAYER_MOMENTARY(2),  // RAISE
+    [1] = ACTION_LAYER_MOMENTARY(1),  // FN1
+    [2] = ACTION_LAYER_MOMENTARY(2),  // FN2
 
     [10] = ACTION_MODS_KEY(MOD_LSFT, KC_1), // !
     [11] = ACTION_MODS_KEY(MOD_LSFT, KC_2), // @
