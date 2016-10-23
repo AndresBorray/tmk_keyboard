@@ -1,2 +1,2 @@
 
-void backlight_init_ports(void);
+void backlight_init_pwm(void);
