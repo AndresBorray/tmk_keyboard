@@ -3,7 +3,7 @@
 #include "backlight.h"
 
 
-void backlight_init_ports()
+void backlight_init_pwm()
 {
     // Setup PB7 as output and output low.
     DDRB |= (1<<7);

@@ -62,7 +62,7 @@ void matrix_init(void)
     MCUCR |= (1<<JTD);
 
     // Initialize PWM timer for backlight.
-    backlight_init_ports();
+    backlight_init_pwm();
     
     // initialize row and col
     unselect_rows();
