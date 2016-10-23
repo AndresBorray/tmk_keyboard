@@ -2,14 +2,14 @@
 
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = KEYMAP(
-  ESC,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    BSPC, DEL,
-  TAB,  A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, ENT,
-  LSFT, Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, RSFT,
-  LCTL, FN1,  LGUI, LALT, SPC,  SPC,  RALT, RGUI, FN2,  RCTL ),
+   ESC,    Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, LBRC, BSPC,
+   TAB,    A,    S,    D,    F,    G,    H,    J,    K,    L, QUOT,  ENT,
+  LSFT,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH, RSFT,
+  LCTL,  FN1, LGUI, LALT,  SPC,  SPC, RALT, RGUI,  FN1, RCTL ),
 [1] = KEYMAP(
-  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
-  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
-  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+   GRV, TRNS,   UP, TRNS,    7,    8,    9,    0, MINS,  EQL, TRNS, RBRC, BSLS,
+  CAPS, LEFT, DOWN, RGHT,    4,    5,    6,  INS, HOME, PGUP, SCLN, TRNS,
+  TRNS, TRNS, TRNS, TRNS,    1,    2,    3,  DEL,  END, PGDN, TRNS, TRNS,
   TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS ),
 [2] = KEYMAP(
   TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
